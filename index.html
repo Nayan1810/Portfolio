@@ -3,88 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nayan's Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            color: #333;
-        }
-        header {
-            background-color: #333;
-            color: white;
-            padding: 1rem 0;
-            text-align: center;
-        }
-        nav a {
-            color: white;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .container {
-            width: 80%;
-            margin: 0 auto;
-            padding: 2rem 0;
-        }
-        .section {
-            margin: 2rem 0;
-        }
-        .about, .portfolio, .contact {
-            text-align: center;
-        }
-        .portfolio-items {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-        }
-        .portfolio-item {
-            width: 30%;
-            margin: 1rem 0;
-        }
-        .portfolio-item img {
-            max-width: 100%;
-            height: auto;
-        }
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 1rem 0;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <a href="#about">About Me</a>
-            <a href="#portfolio">Portfolio</a>
-            <a href="#contact">Contact</a>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="contact.html">Contact</a>
         </nav>
     </header>
     
     <div class="container">
         <section id="about" class="about section">
             <h1>About Me</h1>
-            <p>Hello! I'm Nayan, a Student. Welcome to my portfolio.</p>
+            <p>Hello! I'm Nayan, a Data Enthusiast. Welcome to my portfolio. <a href="about.html">Read more about me.</a></p>
         </section>
         
         <section id="portfolio" class="portfolio section">
             <h1>Portfolio</h1>
             <div class="portfolio-items">
                 <div class="portfolio-item">
-                    <img src="path/to/image1.jpg" alt="Project 1">
+                    <img src="images/image1.jpg" alt="Project 1">
                     <p>Project 1 Description</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="path/to/image2.jpg" alt="Project 2">
+                    <img src="images/image2.jpg" alt="Project 2">
                     <p>Project 2 Description</p>
                 </div>
                 <div class="portfolio-item">
-                    <img src="path/to/image3.jpg" alt="Project 3">
+                    <img src="images/image3.jpg" alt="Project 3">
                     <p>Project 3 Description</p>
                 </div>
             </div>
@@ -92,7 +41,7 @@
         
         <section id="contact" class="contact section">
             <h1>Contact</h1>
-            <p>Feel free to reach out to me at <a href="mailto:nayanjha1810@gmail.com">nayanjha1810@gmail.com</a></p>
+            <p>Feel free to reach out to me at <a href="nayanjha1810@gmail.com">nayanjha1810@gmail.com</a> or visit the <a href="contact.html">Contact page</a>.</p>
         </section>
     </div>
     
@@ -101,3 +50,4 @@
     </footer>
 </body>
 </html>
+
