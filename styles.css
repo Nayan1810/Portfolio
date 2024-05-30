@@ -2,14 +2,19 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #333;
+    color: #fff;
+    background-color: #000;
+    overflow: hidden;
+    position: relative;
 }
 
 header {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     padding: 1rem 0;
     text-align: center;
+    position: relative;
+    z-index: 10;
 }
 
 nav a {
@@ -22,6 +27,8 @@ nav a {
     width: 80%;
     margin: 0 auto;
     padding: 2rem 0;
+    position: relative;
+    z-index: 10;
 }
 
 .section {
@@ -30,6 +37,22 @@ nav a {
 
 .about, .contact {
     text-align: center;
+}
+
+.portfolio-items {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.portfolio-item {
+    width: 30%;
+    margin: 1rem 0;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
 }
 
 .contact form {
@@ -59,11 +82,20 @@ nav a {
 }
 
 footer {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    position: relative;
+    z-index: 10;
 }
+
+#backgroundCanvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
